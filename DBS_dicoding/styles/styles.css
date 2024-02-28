@@ -76,6 +76,8 @@ nav li {
 nav {
     background-color: #00a2c6;
     padding: 5px;
+    position: sticky;
+    top: 0;
 }
 
 main {
@@ -94,12 +96,12 @@ aside {
     padding-left: 20px;
 }
 
-/* CSS rule dalam block @media di bawah akan diterapkan jika ukuran viewport di atas 992px */
-@media screen and (min-width: 600px) {
-    main {
-        flex-direction: row;
-    }
 
-    #mainContent {
-        flex-basis: 70%;
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
     }
+}
