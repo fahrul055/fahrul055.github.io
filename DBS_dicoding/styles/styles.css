@@ -20,10 +20,14 @@ header {
     color: #000
 }
 
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
 nav li {
-    display: inline;
     list-style-type: none;
-    margin-right: 20px
 }
 
 nav {
@@ -46,7 +50,8 @@ nav a:hover {
 
 main {
     padding: 20px;
-    overflow: auto
+    display: flex;
+    gap: 1.5rem;
 }
 
 h2, h3 {
@@ -54,15 +59,21 @@ h2, h3 {
 }
 
 #content {
-    float: left;
-    width: 75%
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
     border-radius: 5px;
     padding: 20px;
-    margin-top: 20px
+   
 }
 
 .featured-image {
@@ -80,12 +91,6 @@ h2, h3 {
     width: 200px
 }
 
-aside {
-    float: right;
-    width: 25%;
-    padding-left: 20px
-}
-
 footer {
     padding: 20px;
     color: #000;
@@ -94,11 +99,12 @@ footer {
     font-weight: 700
 }
 
-@media screen and (max-width:1000px) {
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
 
-    #content,
-    aside {
-        width: 100%;
-        padding: 0
-    }
+}
+
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+
 }
