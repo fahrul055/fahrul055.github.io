@@ -9,31 +9,70 @@ body {
     padding: 0;
 }
 
-h2,
-h3 {
-    color: #00a2c6;
+header {
+    display: inline;
 }
 
-footer {
-    padding: 20px;
-    color: white;
-    background-color: #00a2c6;
-
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
     text-align: center;
-    font-weight: bold;
+    color: white;
+}
+
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
 }
 
 nav a {
     font-size: 18px;
-
     font-weight: 400;
     text-decoration: none;
-
     color: white;
 }
 
 nav a:hover {
     font-weight: bold;
+}
+
+main {
+    padding: 20px;
+
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+h2,
+h3 {
+    color: #00a2c6;
+}
+
+aside {
+    flex: 1;
 }
 
 .profile header {
@@ -59,54 +98,13 @@ nav a:hover {
     padding: 20px;
 }
 
-.jumbotron {
-    font-size: 20px;
-    padding: 60px;
-    background-color: #00c8eb;
-    text-align: center;
-    color: white;
-}
-
-nav ul {
-    padding-inline: 4rem;
-    display: flex;
-
-    gap: 2rem;
-}
-
-nav li {
-    list-style-type: none;
-}
-
-nav {
-    background-color: #00a2c6;
-    padding: 5px;
-
-    position: sticky;
-    top: 0;
-}
-
-main {
+footer {
     padding: 20px;
+    color: white;
+    background-color: #00a2c6;
 
-    display: flex;
-    gap: 1.5rem;
-}
-
-#content {
-    flex: 5;
-
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 1rem 2rem;
-}
-
-aside {
-    flex: 1;
-}
-
-header {
-    display: inline;
+    text-align: center;
+    font-weight: bold;
 }
 
 /* Perangkat dengan lebar layar 1200px dan di bawahnya */
