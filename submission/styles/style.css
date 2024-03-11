@@ -4,35 +4,37 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-
     margin: 0;
     padding: 0;
 }
 
 header {
-    display: inline;
+    display: flex;
 }
 
 .jumbotron {
+    margin-left: 10px;
     font-size: 20px;
-    padding: 60px;
-    background-color: #00c8eb;
-    text-align: center;
-    color: white;
+    padding: 20px 30px;
+    display: flex;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    justify-content: space-around;
 }
 
-nav {
-    background-color: #00a2c6;
+header nav {
     padding: 5px;
-
     position: sticky;
     top: 0;
 }
 
 nav ul {
     padding-inline: 4rem;
+    padding-left: 25rem;
+    padding-top: 25px;
     display: flex;
-
+    justify-content: center;
+    flex-direction: row-reverse;
     gap: 2rem;
 }
 
@@ -40,20 +42,23 @@ nav li {
     list-style-type: none;
 }
 
-nav a {
+nav li a {
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
     font-size: 18px;
-    font-weight: 400;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
+    display: flex;
+    transition: all 0.2s ease-in-out;
 }
 
 nav a:hover {
-    font-weight: bold;
+    background-color: rgb(0, 225, 255);
+    color: rgb(0, 0, 0);
 }
 
 main {
     padding: 20px;
-
     display: flex;
     gap: 1.5rem;
 }
