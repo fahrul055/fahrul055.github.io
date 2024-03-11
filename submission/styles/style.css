@@ -1,54 +1,130 @@
-*,
-*::before,
-*::after {
+* {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
-    height: 100vh;
+
     margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-inline: 4rem;
     display: flex;
-    flex-direction: column;
+
+    gap: 2rem;
 }
 
-header.warsun-container{
-    width: 100%;
-    max-width: 1200px;
-    padding-block: 1rem;
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 9999;
-}
-
-header.warsun-container h1{
-    width: 150px;
-}
-
-header.warsun-container .nav-list ul {
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem 1rem;
-}
-
-header.warsun-container .nav-list li {
+nav li {
     list-style-type: none;
 }
 
-header.warsun-container .nav-list li a {
-    padding: 0.5rem 1.5rem;
-    border-radius: 999px;
+nav a {
+    font-size: 18px;
+    font-weight: 400;
     text-decoration: none;
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: black;
-    transition: all 0.2s ease-in-out;
+    color: white;
 }
 
-header.warsun-container .nav-list li:hover a {
-    background-color: #425c77;
+nav a:hover {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+h2,
+h3 {
+    color: #00a2c6;
+}
+
+aside {
+    flex: 1;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    max-width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    padding: 20px;
+}
+
+footer {
+    padding: 20px;
     color: white;
+    background-color: #00a2c6;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
 }
