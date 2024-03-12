@@ -1,21 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
-
-:root {
-  --underweight: orange;
-  --normal: green;
-  --overweight: lightcoral;
-  --obese: crimson;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Jost", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 body {
-  background: #004d4d;
+  background: #a10159;
   display: grid;
   place-items: center;
   height: 100vh;
@@ -40,12 +31,6 @@ h1 {
   display: grid;
   gap: 1rem;
 }
-
-/* .gender {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
 
 .calculator div {
   display: flex;
@@ -81,7 +66,7 @@ h1 {
 }
 
 .calculator button[type="reset"] {
-  background: #444;
+  background: #2e2e2e;
 }
 
 .calculator button:hover {
@@ -131,4 +116,11 @@ h1 {
 
 .obese {
   color: var(--obese);
+}
+
+:root {
+  --underweight: orange ;
+  --normal: green;
+  --overweight: lightcoral;
+  --obese: crimson;
 }
