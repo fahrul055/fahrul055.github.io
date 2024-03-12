@@ -41,6 +41,12 @@ h1 {
   gap: 1rem;
 }
 
+/* .gender {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
 .calculator div {
   display: flex;
   align-items: center;
