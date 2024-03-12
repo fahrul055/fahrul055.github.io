@@ -19,13 +19,13 @@ body {
 .logo a {
     font-size: 50px;
     font-weight: 800;
-    display: flex;
+    justify-content: flex-start;
     font-family: courier;
     color: #364f6b;
 }
 
 .menu {
-    float: right;
+    justify-content: flex-end;
 }
 
 nav {
