@@ -1,135 +1,83 @@
 * {
-    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Quicksand', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-header {
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
     display: flex;
+    font-family: courier;
+    color: #364f6b;
 }
 
-.jumbotron {
-    margin-left: 10px;
-    font-size: 20px;
-    padding: 20px 30px;
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
     display: flex;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    justify-content: space-around;
-}
-
-header nav {
-    padding: 5px;
+    line-height: 80px;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
+    background: #FFFFFF;
+    z-index: 1;
+    border-bottom: 1px solid #364f6b;
 }
 
 nav ul {
-    padding-inline: 4rem;
-    padding-left: 25rem;
-    padding-top: 25px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    gap: 2rem;
-}
-
-nav li {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-nav li a {
-    padding: 0.5rem 1rem;
-    border-radius: 999px;
-    font-size: 18px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    display: flex;
-    transition: all 0.2s ease-in-out;
+nav ul li {
+    float: left;
 }
 
-nav a:hover {
-    background-color: rgb(0, 225, 255);
-    color: rgb(0, 0, 0);
-}
-
-main {
-    padding: 20px;
-    display: flex;
-    gap: 1.5rem;
-}
-
-#content {
-    flex: 5;
-
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 1rem 2rem;
-}
-
-h2,
-h3 {
-    color: #00a2c6;
-}
-
-aside {
-    flex: 1;
-}
-
-.profile header {
-    text-align: center;
-}
-
-.featured-image {
-    width: 100%;
-    max-height: 300px;
-
-    object-fit: cover;
-    object-position: center;
-}
-
-.profile img {
-    max-width: 200px;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-
-    padding: 20px;
-}
-
-footer {
-    padding: 20px;
-    color: white;
-    background-color: #00a2c6;
-
-    text-align: center;
+nav ul li a {
+    color: black;
     font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
 }
 
-/* Perangkat dengan lebar layar 1200px dan di bawahnya */
-@media screen and (max-width: 1200px) {
-    main {
-        flex-flow: column nowrap;
-    }
-
-    main aside {
-        align-self: center;
-    }
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Perangkat dengan lebar layar 768px dan di bawahnya */
-@media screen and (max-width: 768px) {
-    nav ul {
-        justify-content: center;
-    }
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
 
-    main aside {
-        align-self: stretch;
-    }
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #364f6b;
 }
