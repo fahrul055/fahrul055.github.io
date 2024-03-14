@@ -46,7 +46,7 @@ h1 {
 .calculator input {
   flex: 1;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 1px;
   padding: 10px;
   outline-color: #555;
   font-size: 1.25rem;
